@@ -6,11 +6,8 @@
   var root = document.documentElement;
   var stored = null;
   try { stored = localStorage.getItem("theme"); } catch (e) {}
-  if (stored === "dark" || stored === "light") {
-    root.setAttribute("data-theme", stored);
-  } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    root.setAttribute("data-theme", "dark");
-  }
+  // Default to LIGHT for all visitors; only honor an explicit user choice.
+  root.setAttribute("data-theme", stored === "dark" ? "dark" : "light");
   var toggle = document.getElementById("themeToggle");
   if (toggle) {
     toggle.addEventListener("click", function () {
