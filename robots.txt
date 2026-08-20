@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /companies
+Allow: /professors
+Disallow: /$
+
+Sitemap: https://osamaaltaf.vercel.app/sitemap.xml

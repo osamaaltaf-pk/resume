@@ -1,0 +1,17 @@
+# Local source material (not part of the deployed site)
+.source/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# Python tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Vercel
+.vercel/
