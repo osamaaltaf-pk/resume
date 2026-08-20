@@ -22,7 +22,7 @@ ACCENT = (37, 99, 235)   # blue
 RULE = (209, 213, 219)   # light gray rule
 
 NAME = "Osama Altaf"
-TITLE = "AI Engineer  |  LLM Systems, Voice AI & Agentic Automation"
+TITLE = "Founder & CEO, Wisko (wiskoai.com)  |  AI Engineer - LLM & Voice AI"
 
 
 class Resume(FPDF):
@@ -134,7 +134,8 @@ pdf.cell(pdf.get_string_width(seg2) + 1, 4.8, seg2,
 section("Summary")
 pdf.set_font("Arial", "", 9)
 pdf.set_text_color(*INK)
-summary = ("AI Engineer specializing in production-grade large language model systems, real-time voice AI, "
+summary = ("Founder and CEO of Wisko (wiskoai.com), a multi-tenant AI SaaS whiteboard-animation platform, and an "
+           "AI Engineer specializing in production-grade large language model systems, real-time voice AI, "
            "and agentic automation. Experience ranges from multilingual voice platforms handling live telephony "
            "to a government-grade real-time translation system spanning 30+ languages. Focused on making models "
            "deployment-ready: fine-tuning LLMs and vision-language models, hyperparameter tuning, and accelerating "
@@ -152,13 +153,18 @@ labeled("Automation:", "n8n, Make, Zapier")
 
 # ---------------- EXPERIENCE ----------------
 section("Professional Experience")
-role("AI Engineer - LLM Systems Research & Analyst (Contract, Remote)", "London, United Kingdom", "Jul 2025 - Present")
+role("Founder & CEO - Wisko (wiskoai.com)", "Multi-tenant AI SaaS - Whiteboard Animation Studio", "Current")
 bullets([
-    "Deploy and scale large language models for smart assistants and task automation at company level.",
-    "Leverage vLLM for high-throughput, low-latency inference with efficient KV cache utilization.",
-    "Integrate AIBrix multi-agent orchestration to coordinate tools and APIs into goal-driven agent workflows.",
-    "Fine-tune LLMs on proprietary datasets to align outputs with company-specific terminology.",
-    "Build scalable FastAPI services with in-memory caching via LMCache and Redis.",
+    "Founded and lead Wisko, a multi-tenant SaaS platform where an agentic pipeline turns a prompt into a finished whiteboard-animation video.",
+    "Own product direction, system architecture, and the agentic content-generation stack.",
+])
+role("AI Engineer - LLM Systems Research & Analyst (Contract, Remote)", "London, United Kingdom", "Jul 2025 - Jan 2026")
+bullets([
+    "Deployed and scaled large language models for smart assistants and task automation at company level.",
+    "Used vLLM for high-throughput, low-latency inference with efficient KV cache use.",
+    "Integrated AIBrix multi-agent orchestration to coordinate tools and APIs into goal-driven agent workflows.",
+    "Fine-tuned LLMs on proprietary datasets to align outputs with company-specific terminology.",
+    "Built scalable FastAPI services with in-memory caching via LMCache and Redis.",
 ])
 role("AI Voice Agent Developer & Research Analyst - Government Real-Time Translation System",
      "Confidential GovTech Project, Remote  -  Morocco", "Feb 2025 - Jun 2025")
@@ -203,6 +209,9 @@ labeled("Additional:", "Machine Learning, MLOps & LLM Zoomcamps - DataTalks.Club
 # ---------------- PROJECTS ----------------
 section("Selected Projects")
 bullets([
+    "Airport Vehicle Detection, Vision vs. LiDAR (freelance research, UK): Benchmarked a range of computer-vision "
+    "models for detecting vehicles at airports, assessing whether camera-based systems can replace LiDAR by "
+    "estimating depth, distance, and detection quality across varied lighting, seasons, and weather.",
     "Cotton Disease Detection Transformer (Final Year Project): Vision Transformer with an AI digital microscope "
     "for accurate cotton-crop disease detection from visual symptoms; outperformed CNN baselines.",
     "Autonomous Financial Analyst Swarm: Multi-agent CrewAI system that scrapes market news, runs sentiment "

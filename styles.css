@@ -170,6 +170,41 @@ h1,h2,h3{ line-height:1.15; letter-spacing:-.02em; margin:0; }
 }
 .hero-badge .dot{ width:9px; height:9px; border-radius:50%; background:#22c55e; box-shadow:0 0 0 4px rgba(34,197,94,.18); }
 
+/* ---------- flagship (Wisko founder band) ---------- */
+.flagship{
+  background:
+    radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%),
+    var(--accent-soft);
+  border-block:1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.flagship-inner{
+  display:flex; align-items:center; gap:28px; padding:26px 0;
+}
+.flagship-logo{
+  flex:none; width:66px; height:66px; border-radius:18px; display:grid; place-items:center;
+  background:linear-gradient(150deg, var(--accent), var(--accent-ink));
+  color:#fff; font-family:var(--serif); font-weight:600; font-size:2rem; letter-spacing:-.02em;
+  box-shadow:var(--shadow-lg);
+}
+.flagship-body{ flex:1 1 auto; min-width:0; }
+.flagship-eyebrow{
+  display:inline-flex; align-items:center; gap:.5em; margin:0 0 .35rem;
+  font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:#fff; background:var(--accent-ink); padding:.3em .7em; border-radius:999px;
+}
+.flagship-body h2{
+  font-family:var(--serif); font-weight:600; font-size:clamp(1.4rem,3vw,2rem);
+  margin:.1rem 0 .3rem; letter-spacing:-.02em; display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap;
+}
+.flagship-body h2 .tld{ font-family:var(--font); font-size:.9rem; font-weight:600; color:var(--accent-ink); }
+.flagship-body p{ margin:0; color:var(--ink-soft); font-size:1rem; max-width:66ch; }
+.flagship-cta{ flex:none; }
+@media (max-width: 760px){
+  .flagship-inner{ flex-direction:column; align-items:flex-start; gap:18px; }
+  .flagship-cta{ width:100%; }
+  .flagship-cta .btn{ width:100%; justify-content:center; }
+}
+
 /* stats */
 .stats{
   display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
@@ -247,6 +282,10 @@ h1,h2,h3{ line-height:1.15; letter-spacing:-.02em; margin:0; }
 .project-sub{ margin:0; color:var(--accent-ink); font-weight:600; font-size:.82rem; }
 .project p{ margin:0; color:var(--ink-soft); font-size:.95rem; }
 .project .tags{ margin-top:auto !important; padding-top:.4rem !important; }
+.project-links{ display:flex; gap:1.1rem; margin-top:.7rem; padding-top:.7rem; border-top:1px solid var(--line); }
+.project-links a{ font-size:.83rem; font-weight:600; color:var(--accent-ink); display:inline-flex; align-items:center; gap:.35em; }
+.project-links a:hover{ text-decoration:none; opacity:.8; }
+.project-links svg{ opacity:.85; }
 .projects-foot{ margin:2rem 0 0; font-weight:600; }
 
 /* education + certs */

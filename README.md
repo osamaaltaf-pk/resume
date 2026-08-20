@@ -1,4 +1,4 @@
-# Osama Altaf — Personal Profile Site
+# Osama Altaf, Personal Profile Site
 
 A fast, dependency-free static site (HTML + CSS + vanilla JS) with **two tailored versions**
 of my profile plus a private share hub. Deploys to Vercel with zero configuration.
@@ -51,9 +51,9 @@ Applicant Tracking Systems.
 
 1. Push this repo to GitHub.
 2. On Vercel: **Add New… → Project → Import** the repo.
-3. Framework preset: **Other**. No build command, no output directory — served statically from root.
+3. Framework preset: **Other**. No build command, no output directory. Served statically from root.
 4. Deploy. Optionally add a custom domain.
 
 ---
 
-© Osama Altaf — AI Engineer · [LinkedIn](https://www.linkedin.com/in/osamaaltafpk/) · [GitHub](https://github.com/osamaaltaf-pk)
+© Osama Altaf · AI Engineer · [LinkedIn](https://www.linkedin.com/in/osamaaltafpk/) · [GitHub](https://github.com/osamaaltaf-pk)
