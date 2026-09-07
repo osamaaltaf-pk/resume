@@ -78,15 +78,31 @@ def bullets(items):
     pdf.ln(0.8)
 
 
+# Every labeled() row shares one label column, so the value text starts at the
+# same x on every line - including wrapped ones. Without this the left edge of
+# the value column steps in and out with each label's width.
+ALL_LABELS = ["CGPA:", "Thesis:", "Relevant coursework:", "Additional training:",
+              "Pre-university:", "Vision & multimodal:", "LLM & training:",
+              "Inference & MLOps:", "Data & retrieval:", "Scientific foundations:",
+              "English:", "Urdu:", "Certifications:"]
+pdf.set_font("Arial", "B", 9)
+LABEL_W = max(pdf.get_string_width(s) for s in ALL_LABELS) + 2.5
+
+
 def labeled(label, text):
     pdf.set_font("Arial", "B", 9)
     pdf.set_text_color(*INK)
-    lw = pdf.get_string_width(label + " ") + 1
-    x = pdf.get_x()
-    pdf.cell(lw, 4.8, label)
+    x0 = pdf.get_x()
+    pdf.cell(LABEL_W, 4.8, label)
     pdf.set_font("Arial", "", 9)
-    pdf.set_x(x + lw)
-    pdf.multi_cell(EPW - lw, 4.8, text, align="L", new_x="LMARGIN", new_y="NEXT")
+    # Shift the left margin so multi_cell wraps back to the value column,
+    # not to the page margin.
+    prev_lm = pdf.l_margin
+    pdf.set_left_margin(x0 + LABEL_W)
+    pdf.set_x(x0 + LABEL_W)
+    pdf.multi_cell(EPW - LABEL_W, 4.8, text, align="L", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_left_margin(prev_lm)
+    pdf.set_x(prev_lm)
     pdf.ln(0.4)
 
 

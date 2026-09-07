@@ -91,16 +91,27 @@ def bullets(items):
     pdf.ln(0.8)
 
 
+# Shared label column so every labeled() row starts its value text at the same
+# x, wrapped lines included.
+ALL_LABELS = ["LLM & GenAI:", "Frameworks:", "Voice AI:", "Inference & MLOps:",
+              "Backend & Data:", "Automation:", "Additional:"]
+pdf.set_font("Arial", "B", 9)
+LABEL_W = max(pdf.get_string_width(s) for s in ALL_LABELS) + 2.5
+
+
 def labeled(label, text):
     pdf.set_font("Arial", "B", 9)
     pdf.set_text_color(*INK)
-    lw = pdf.get_string_width(label + " ") + 1
-    x = pdf.get_x()
-    pdf.cell(lw, 4.8, label)
+    x0 = pdf.get_x()
+    pdf.cell(LABEL_W, 4.8, label)
     pdf.set_font("Arial", "", 9)
     pdf.set_text_color(*INK)
-    pdf.set_x(x + lw)
-    pdf.multi_cell(EPW - lw, 4.8, text, align="L", new_x="LMARGIN", new_y="NEXT")
+    prev_lm = pdf.l_margin
+    pdf.set_left_margin(x0 + LABEL_W)
+    pdf.set_x(x0 + LABEL_W)
+    pdf.multi_cell(EPW - LABEL_W, 4.8, text, align="L", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_left_margin(prev_lm)
+    pdf.set_x(prev_lm)
     pdf.ln(0.4)
 
 
