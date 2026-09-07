@@ -11,8 +11,15 @@ of my profile plus a private share hub. Deploys to Vercel with zero configuratio
 | `/companies`   | Companies & recruiters       | Industry-first: impact, experience, skills, projects |
 | `/professors`  | University professors        | Research-first: education & CGPA, thesis, projects  |
 
-Every page has an email contact block (copy-to-clipboard + `mailto:`) and a link to the
-downloadable **ATS-friendly PDF resume** (`/Osama_Altaf_Resume.pdf`).
+Each audience gets **its own PDF** - the two are not the same document:
+
+| PDF | Linked from | Emphasis |
+| --- | --- | --- |
+| `Osama_Altaf_Resume.pdf` | `/companies` | ATS-friendly industry resume: summary, skills, employment, selected projects |
+| `Osama_Altaf_Academic_CV.pdf` | `/professors` | Academic CV: research interests, education with coursework and thesis, research projects first, employment condensed, academic service |
+
+Every page has an email contact block (copy-to-clipboard + `mailto:`) and a link to the PDF
+for its own audience.
 
 ## Structure
 
@@ -23,8 +30,10 @@ professors/index.html # professor / grad-school version
 styles.css            # shared styles (light + dark)
 script.js             # theme toggle, mobile nav, scrollspy, copy buttons
 assets/               # photo + favicons
-Osama_Altaf_Resume.pdf# generated ATS resume (single column, real text)
-scripts/generate_pdf.py  # regenerates the PDF (fpdf2 + Arial)
+Osama_Altaf_Resume.pdf     # generated ATS industry resume (single column, real text)
+Osama_Altaf_Academic_CV.pdf# generated academic CV (research-first ordering)
+scripts/generate_pdf.py        # regenerates the industry resume (fpdf2 + Arial)
+scripts/generate_cv_academic.py# regenerates the academic CV
 vercel.json           # cleanUrls + cache headers
 ```
 
@@ -37,12 +46,17 @@ python -m http.server 5173
 # then open http://localhost:5173
 ```
 
-## Regenerate the PDF resume
+## Regenerate the PDFs
 
 ```bash
 pip install fpdf2
-python scripts/generate_pdf.py
+python scripts/generate_pdf.py          # -> Osama_Altaf_Resume.pdf     (industry)
+python scripts/generate_cv_academic.py # -> Osama_Altaf_Academic_CV.pdf (academic)
 ```
+
+Both read Arial from `C:\Windows\Fonts`; adjust `FONT_DIR` on other platforms.
+
+**CGPA is 3.63/4.00**, per the official KFUEIT final transcript (134/134 credit hours, 90%).
 
 Produces a single-column, standard-font (Arial), real-text PDF that parses cleanly in
 Applicant Tracking Systems.

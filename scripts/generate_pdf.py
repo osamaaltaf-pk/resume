@@ -197,7 +197,7 @@ bullets([
 # ---------------- EDUCATION ----------------
 section("Education")
 role("BS Physics - Computational Physics & Computer Programming",
-     "Khwaja Fareed University of Engineering & IT (KFUEIT), Pakistan", "CGPA 3.67 / 4.00")
+     "Khwaja Fareed University of Engineering & IT (KFUEIT), Pakistan", "CGPA 3.63 / 4.00")
 pdf.set_font("Arial", "", 9)
 pdf.set_text_color(*INK)
 pdf.multi_cell(EPW, 4.6, "Thesis: Object Detection Transformer model for disease detection on cotton leaves.",
