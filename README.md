@@ -10,7 +10,7 @@ of my profile plus a private share hub. Deploys to Vercel with zero configuratio
 | `/`            | **Private hub** (me)         | Pick a version, copy its link, share only that page |
 | `/companies`   | Companies & recruiters       | Industry-first: impact, experience, skills, projects |
 | `/professors`  | University professors        | Research-first: education & CGPA, thesis, projects  |
-| `/personal`    | Anyone (bio / signature link) | First-person homepage: Now, what I want to study next, my story, News |
+| `/personal`    | Anyone (bio / signature link) | Animated, first-person homepage: Now, research questions, work, journey, News |
 
 Each audience gets **its own PDF** - the two are not the same document:
 
@@ -28,7 +28,7 @@ for its own audience.
 index.html            # private share hub (noindex)
 companies/index.html  # company/recruiter version
 professors/index.html # professor / grad-school version
-personal/index.html   # personal academic-style homepage (Now + News)
+personal/             # animated personal homepage (own personal.css + personal.js, no deps)
 styles.css            # shared styles (light + dark)
 script.js             # theme toggle, mobile nav, scrollspy, copy buttons
 assets/               # photo + favicons
