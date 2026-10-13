@@ -171,25 +171,8 @@
   <div class="qs">
     <!-- Q1 grounding -->
     <article class="q spot rv">
-      <div class="q-art" aria-hidden="true">
-        <svg viewBox="0 0 320 200">
-          <defs>
-            <radialGradient id="xr" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#cfd8ff" stop-opacity=".55"/><stop offset="1" stop-color="#0b0f1d" stop-opacity="0"/></radialGradient>
-          </defs>
-          <rect x="16" y="16" width="150" height="168" rx="10" fill="#0b0f1d" stroke="rgba(255,255,255,.12)"/>
-          <ellipse cx="66" cy="96" rx="30" ry="52" fill="url(#xr)"/>
-          <ellipse cx="118" cy="96" rx="30" ry="52" fill="url(#xr)"/>
-          <path d="M91 40 V160" stroke="rgba(220,230,255,.35)" stroke-width="5" stroke-linecap="round"/>
-          <path d="M40 70 Q91 58 142 70 M38 92 Q91 80 144 92 M40 114 Q91 102 142 114" stroke="rgba(220,230,255,.18)" fill="none" stroke-width="3"/>
-          <rect class="bbox" x="100" y="108" width="40" height="34" rx="3"/>
-          <path class="link" d="M140 125 C 175 125, 180 70, 196 70"/>
-          <g class="tokens">
-            <rect x="196" y="56" width="108" height="28" rx="8"/><text x="250" y="74">opacity, left</text>
-            <rect x="196" y="94" width="78" height="28" rx="8" class="dim"/><text x="235" y="112" class="dim">lower lobe</text>
-            <rect x="196" y="132" width="96" height="28" rx="8" class="dim"/><text x="244" y="150" class="dim">likely benign</text>
-          </g>
-          <circle class="scan" cx="0" cy="0" r="3"/>
-        </svg>
+      <div class="q-art q-media">
+        <img src="/assets/personal/xray.webp" width="640" height="360" loading="lazy" alt="Animation: a real chest X-ray is scanned, the enlarged heart is boxed, and the word cardiomegaly in the report is linked to that region." />
       </div>
       <div class="q-body">
         <p class="q-n">01</p>
@@ -273,18 +256,8 @@
 
   <div class="works">
     <a class="work spot rv wide" href="https://wiskoai.com" target="_blank" rel="noopener">
-      <div class="thumb t-wisko" aria-hidden="true">
-        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet">
-          <rect x="0" y="0" width="400" height="220" fill="#f7f6f1"/>
-          <g class="wb">
-            <path class="ink" d="M110 150 C 110 110, 90 100, 90 75 a 40 40 0 1 1 80 0 c 0 25, -20 35, -20 75 Z"/>
-            <path class="ink" d="M115 162 H145 M118 174 H142"/>
-            <path class="ink" d="M130 20 V8 M78 40 L68 32 M182 40 L192 32"/>
-            <path class="ink" d="M230 70 H350 M230 100 H330 M230 130 H340"/>
-            <path class="ink arrow" d="M190 110 C 205 110, 210 110, 222 110 M214 102 L222 110 L214 118"/>
-          </g>
-          <g class="hand"><path d="M0 0 l26 -6 l10 18 l-20 14 z" fill="#e8c4a0" stroke="#3a2a1f" stroke-width="1.5"/><path d="M-2 0 l-14 6" stroke="#222" stroke-width="3" stroke-linecap="round"/></g>
-        </svg>
+      <div class="thumb t-media t-wisko">
+        <img src="/assets/personal/wisko.webp" width="480" height="480" loading="lazy" alt="Real Wisko output: a hand draws a sketch, then explainer scenes draw themselves." />
       </div>
       <div class="work-body">
         <p class="work-meta">Founder project · Ongoing</p>
@@ -294,17 +267,8 @@
     </a>
 
     <a class="work spot rv" href="https://github.com/osamaaltaf-pk/Llama_3_2_Vision_Finetuning_Unsloth_Radiography" target="_blank" rel="noopener">
-      <div class="thumb t-xray" aria-hidden="true">
-        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-          <defs><radialGradient id="lung" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#e6ecff" stop-opacity=".6"/><stop offset="1" stop-color="#05070e" stop-opacity="0"/></radialGradient></defs>
-          <rect width="400" height="220" fill="#05070e"/>
-          <ellipse cx="165" cy="112" rx="42" ry="74" fill="url(#lung)"/><ellipse cx="235" cy="112" rx="42" ry="74" fill="url(#lung)"/>
-          <path d="M200 30 V200" stroke="rgba(230,236,255,.35)" stroke-width="7" stroke-linecap="round"/>
-          <path d="M130 70 Q200 54 270 70 M126 100 Q200 84 274 100 M128 130 Q200 114 272 130 M134 160 Q200 146 266 160" stroke="rgba(230,236,255,.14)" fill="none" stroke-width="4"/>
-          <rect class="bbox" x="222" y="128" width="54" height="44" rx="4"/>
-          <rect class="scanline" x="110" y="0" width="180" height="2"/>
-          <g class="report"><rect x="292" y="40" width="96" height="64" rx="8"/><path d="M302 58 H376 M302 72 H364 M302 86 H370"/></g>
-        </svg>
+      <div class="thumb t-media">
+        <img src="/assets/personal/xray-still.webp" width="640" height="360" loading="lazy" alt="Chest X-ray with the heart region boxed and linked to the word cardiomegaly in a report." />
       </div>
       <div class="work-body">
         <p class="work-meta">Multimodal · 2025</p>
@@ -377,10 +341,8 @@
     </a>
 
     <a class="work spot rv" href="https://github.com/osamaaltaf-pk/cotton-disease-detection" target="_blank" rel="noopener">
-      <div class="thumb t-leaf">
-        <img src="/assets/personal-cotton.jpg" alt="Cotton leaf from the thesis dataset" width="640" height="656" loading="lazy" />
-        <span class="det" aria-hidden="true"><em>curl virus</em></span>
-        <span class="sweep" aria-hidden="true"></span>
+      <div class="thumb t-media">
+        <img src="/assets/personal/cotton.webp" width="640" height="360" loading="lazy" alt="Three real cotton leaves from the thesis dataset, scanned one by one and labelled healthy, curl virus, and bacterial blight." />
       </div>
       <div class="work-body">
         <p class="work-meta">Undergraduate thesis · 2023</p>
@@ -454,7 +416,7 @@
 </main>
 
 <footer class="foot wrap">
-  <span>© <span id="year">2026</span> Osama Altaf</span>
+  <span>© <span id="year">2026</span> Osama Altaf · Chest X-ray: NIH ChestX-ray14</span>
   <span class="foot-links">
     <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a>
     <a href="https://huggingface.co/deepLEARNING786" target="_blank" rel="noopener">Hugging Face</a>
