@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Osama Altaf | Personal Page</title>
-<meta name="description" content="Osama Altaf's personal page: what I'm working on now, what I want to study next, and how I got here. Founder of Wisko, AI engineer, applying for a Master's in AI." />
+<title>Osama Altaf · Building AI that shows its work</title>
+<meta name="description" content="Osama Altaf: founder of Wisko and AI engineer, heading into a Master's in AI to go deep on LLMs, vision-language models, multi-agent systems, and inference." />
 <meta name="author" content="Osama Altaf" />
-<link rel="canonical" href="https://osamaaltaf.vercel.app/personal/" />
+<meta name="theme-color" content="#07080d" />
+<link rel="canonical" href="https://osama-altaf.vercel.app/personal/" />
 
 <meta property="og:type" content="profile" />
-<meta property="og:title" content="Osama Altaf, Personal Page" />
-<meta property="og:description" content="What I'm doing now and what I've done: Wisko, LLM systems, computer vision, and voice AI." />
+<meta property="og:title" content="Osama Altaf · Building AI that shows its work" />
+<meta property="og:description" content="Founder of Wisko. AI engineer. Next: a Master's in AI on LLMs, VLMs, multi-agent systems, and inference." />
 <meta property="og:image" content="/assets/osama.jpg" />
 <meta name="twitter:card" content="summary" />
 
@@ -20,8 +21,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/personal/personal.css" />
+<script>document.documentElement.classList.add("js");</script>
 
 <script type="application/ld+json">
 {
@@ -30,176 +32,438 @@
   "name": "Osama Altaf",
   "jobTitle": "Founder & CEO, Wisko · AI Engineer",
   "email": "mailto:osamaaltaf.pk@gmail.com",
-  "url": "https://osamaaltaf.vercel.app/personal/",
-  "image": "https://osamaaltaf.vercel.app/assets/osama.jpg",
+  "url": "https://osama-altaf.vercel.app/personal/",
+  "image": "https://osama-altaf.vercel.app/assets/osama.jpg",
   "sameAs": ["https://www.linkedin.com/in/osamaaltafpk/","https://github.com/osamaaltaf-pk","https://huggingface.co/deepLEARNING786"],
-  "knowsAbout": ["Large Language Models","Computer Vision","Vision Transformers","Voice AI","Agentic AI"],
+  "knowsAbout": ["Large Language Models","Vision-Language Models","Multi-Agent Systems","LLM Inference","Computer Vision","Voice AI"],
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Khwaja Fareed University of Engineering & Information Technology (KFUEIT)" }
 }
 </script>
 </head>
-<body class="personal">
-<a class="skip-link" href="#main">Skip to content</a>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-<header class="nav" id="nav">
-  <div class="pp-wrap nav-inner">
-    <a class="brand" href="#top" aria-label="Osama Altaf home">
-      <span class="brand-mark">OA</span>
-      <span class="brand-name">Osama Altaf</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#now">Now</a>
-      <a href="#next">Next</a>
-      <a href="#story">Story</a>
-      <a href="#work">Work</a>
-      <a href="#news">News</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
-        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm0 16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1Zm18 0a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1ZM5.6 5.6a1 1 0 0 1 0-1.4l-.7-.7a1 1 0 1 1 1.4-1.4l.7.7a1 1 0 0 1-1.4 1.4Zm12.8 12.8a1 1 0 0 1 1.4 0l.7.7a1 1 0 0 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4ZM5.6 18.4a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.4-1.4l.7-.7a1 1 0 0 1 1.4 0ZM18.4 5.6a1 1 0 0 1-1.4-1.4l.7-.7a1 1 0 1 1 1.4 1.4l-.7.7ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg>
-        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A8.5 8.5 0 0 1 11.2 3a1 1 0 0 0-1.3-1.2A9.5 9.5 0 1 0 22.2 14a1 1 0 0 0-1.2-1.2Z"/></svg>
-      </button>
-    </div>
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+<!-- NAV -->
+<header class="nav">
+  <a class="nav-mark" href="#top" aria-label="Back to top">OA</a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#now">Now</a>
+    <a href="#research">Research</a>
+    <a href="#work">Work</a>
+    <a href="#journey">Journey</a>
+    <a href="#news">News</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Say hello</a>
 </header>
 
-<main id="main" class="pp-wrap">
+<main id="main">
 <span id="top"></span>
 
-<!-- INTRO -->
-<section class="pp-intro">
-  <img class="pp-photo" src="/assets/osama.jpg" srcset="/assets/osama.jpg 640w, /assets/osama@2x.jpg 900w" sizes="200px" width="200" height="200" alt="Portrait of Osama Altaf" />
-  <div class="pp-bio">
-    <h1>Hi, I'm Osama.</h1>
-    <p class="pp-role">Founder of <a href="https://wiskoai.com" target="_blank" rel="noopener">Wisko</a> · AI engineer · future Master's student in AI</p>
-    <p>
-      I trained as a physicist and ended up building AI systems. These days I spend most of my
-      time on <strong>Wisko</strong>, a small company I started where agents turn an idea into a
-      hand-drawn whiteboard video. Before that I worked remotely with teams in London, Miami, and
-      Morocco on voice agents, real-time translation, and serving large language models.
-    </p>
-    <p>
-      What keeps pulling me in is the gap between a model that <em>sounds</em> right and one that
-      is actually right, and why that gap gets so much harder once real users, many agents, and
-      real latency budgets are involved. I want to study it properly, which is why my next step
-      is a <strong>Master's in AI</strong>.
-    </p>
-    <p class="pp-links">
-      <a href="mailto:osamaaltaf.pk@gmail.com">Email</a> <span aria-hidden="true">/</span>
-      <a href="/Osama_Altaf_Academic_CV.pdf">CV</a> <span aria-hidden="true">/</span>
-      <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a> <span aria-hidden="true">/</span>
-      <a href="https://www.linkedin.com/in/osamaaltafpk/" target="_blank" rel="noopener">LinkedIn</a> <span aria-hidden="true">/</span>
-      <a href="https://huggingface.co/deepLEARNING786" target="_blank" rel="noopener">Hugging Face</a>
-    </p>
+<!-- HERO -->
+<section class="hero">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="status"><span class="pulse"></span> Applying for a Master's in AI · 2026</p>
+      <h1 class="headline" aria-label="Building AI that shows its work.">
+        <span class="w" style="--i:0">Building</span>
+        <span class="w" style="--i:1">AI</span>
+        <span class="w" style="--i:2">that</span><br />
+        <em class="w grad" style="--i:3">shows</em>
+        <em class="w grad" style="--i:4">its</em>
+        <em class="w grad" style="--i:5">work.</em>
+      </h1>
+      <p class="lede rise" style="--d:.9s">
+        I'm <strong>Osama Altaf</strong>, founder of <a href="https://wiskoai.com" target="_blank" rel="noopener">Wisko</a> and an AI engineer.
+        I've shipped LLM, voice, and vision systems for teams in London, Miami, and Morocco.
+        Next, I want to understand them deeply: <strong>LLMs and VLMs</strong>, <strong>multi-agent systems</strong>, and <strong>inference</strong>.
+      </p>
+      <div class="actions rise" style="--d:1.05s">
+        <a class="btn btn-primary magnetic" href="#research">
+          <span>My research questions</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v11.6l4.3-4.3a1 1 0 1 1 1.4 1.4l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 1 1 1.4-1.4l4.3 4.3V5a1 1 0 0 1 1-1Z"/></svg>
+        </a>
+        <a class="btn btn-ghost magnetic" href="mailto:osamaaltaf.pk@gmail.com"><span>osamaaltaf.pk@gmail.com</span></a>
+      </div>
+      <ul class="socials rise" style="--d:1.2s">
+        <li><a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://huggingface.co/deepLEARNING786" target="_blank" rel="noopener">Hugging Face</a></li>
+        <li><a href="https://www.linkedin.com/in/osamaaltafpk/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="/Osama_Altaf_Academic_CV.pdf">CV</a></li>
+      </ul>
+    </div>
+
+    <div class="portrait rise" style="--d:.5s">
+      <div class="orbit" aria-hidden="true">
+        <span style="--a:0deg"><b>LLMs</b></span>
+        <span style="--a:90deg"><b>VLMs</b></span>
+        <span style="--a:180deg"><b>Agents</b></span>
+        <span style="--a:270deg"><b>Inference</b></span>
+      </div>
+      <div class="ring" aria-hidden="true"></div>
+      <img src="/assets/osama@2x.jpg" width="900" height="900" alt="Portrait of Osama Altaf" fetchpriority="high" />
+    </div>
   </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Large Language Models</span><i>✦</i><span>Vision-Language Grounding</span><i>✦</i><span>Multi-Agent Systems</span><i>✦</i><span>Multi-User LLM Serving</span><i>✦</i><span>Efficient Inference</span><i>✦</i><span>Voice AI</span><i>✦</i><span>Computer Vision</span><i>✦</i>
+    <span>Large Language Models</span><i>✦</i><span>Vision-Language Grounding</span><i>✦</i><span>Multi-Agent Systems</span><i>✦</i><span>Multi-User LLM Serving</span><i>✦</i><span>Efficient Inference</span><i>✦</i><span>Voice AI</span><i>✦</i><span>Computer Vision</span><i>✦</i>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="wrap stats">
+  <div class="stat rv"><b data-count="30" data-suffix="+">30+</b><span>languages translated live in a government voice system</span></div>
+  <div class="stat rv"><b data-count="1.5" data-prefix="&lt;" data-suffix="s" data-dec="1">&lt;1.5s</b><span>end-to-end speech translation latency</span></div>
+  <div class="stat rv"><b data-count="40" data-suffix="+">40+</b><span>codebases across LLMs, vision, voice, and media</span></div>
+  <div class="stat rv"><b data-count="3.63" data-dec="2">3.63</b><span>CGPA, BS Physics (out of 4.00)</span></div>
 </section>
 
 <!-- NOW -->
-<section id="now" class="pp-section">
-  <h2>What I'm doing now</h2>
-  <p class="pp-stamp">Last updated October 2026</p>
-  <ul class="pp-now">
-    <li><strong>Running Wisko.</strong> I write most of the code, talk to users, and keep the pipeline honest: script, voice, images, and sketch animation, generated end to end. It now has a <a href="https://github.com/osamaaltaf-pk/Wisko-AI-SDK" target="_blank" rel="noopener">public API and Python SDK</a>, so other people (and their agents) can build on it.</li>
-    <li><strong>Running models on my own hardware.</strong> I'm a little obsessed with making models cheap and local: exporting diffusion models to ONNX, quantizing, and routing between vLLM, SGLang, and llama.cpp on a laptop GPU.</li>
-    <li><strong>Applying for a Master's in AI.</strong> If you supervise students working on any of the questions below, I would really like to <a href="mailto:osamaaltaf.pk@gmail.com?subject=Master%27s%20in%20AI">hear from you</a>.</li>
-  </ul>
-</section>
+<section id="now" class="section wrap">
+  <header class="sec-head rv">
+    <p class="kicker"><span>01</span> Now</p>
+    <h2>What I'm doing <em>right now</em></h2>
+    <p class="sec-note">Last updated October 2026</p>
+  </header>
 
-<!-- NEXT -->
-<section id="next" class="pp-section">
-  <h2>What I want to learn next</h2>
-  <p>Building products taught me where my understanding runs out. These are the questions I want to spend my Master's on:</p>
-  <div class="pp-qs">
-    <div class="pp-q">
-      <h3>LLMs and VLMs that can show their work</h3>
-      <p>When I fine-tuned Llama 3.2 Vision on radiography, it wrote fluent, report-like text almost immediately. Proving that the text came from a specific region of the image was much harder. I want to understand grounding in vision-language models, not just fluency.</p>
-    </div>
-    <div class="pp-q">
-      <h3>Many agents, many users</h3>
-      <p>Wisko runs a chain of agents for many users at once, and most of what goes wrong lives in the handoffs: shared state, memory, who is allowed to see what. I want to study multi-agent systems and multi-user LLMs as a research problem, not only an engineering one.</p>
-    </div>
-    <div class="pp-q">
-      <h3>Inference, and learning at inference time</h3>
-      <p>Most of my working hours have gone into making models fast enough to use: KV caching, quantization, batching, sub-second voice pipelines. I want to go deeper into efficient inference and into how models can reason and adapt while they're being used.</p>
-    </div>
+  <div class="bento">
+    <article class="card spot big rv">
+      <div class="card-top"><span class="chip live"><span class="pulse"></span>Building</span></div>
+      <h3>Running <a href="https://wiskoai.com" target="_blank" rel="noopener">Wisko</a></h3>
+      <p>My company. A chain of agents writes a script, generates voice and images, and animates a hand drawing each idea as the narrator says it. It now has a public <a href="https://github.com/osamaaltaf-pk/Wisko-AI-SDK" target="_blank" rel="noopener">API and Python SDK</a> so other people, and their agents, can build on it.</p>
+      <svg class="sketch" viewBox="0 0 400 120" aria-hidden="true">
+        <path class="draw" d="M20 90 C 60 20, 110 20, 140 70 S 220 110, 250 50 S 330 10, 380 60" />
+        <circle class="draw" cx="300" cy="80" r="18" />
+        <path class="draw" d="M60 105 L 120 105 M 70 112 L 110 112" />
+      </svg>
+    </article>
+    <article class="card spot rv">
+      <div class="card-top"><span class="chip">Tinkering</span></div>
+      <h3>Running models on my own hardware</h3>
+      <p>Exporting diffusion models to ONNX, quantizing, and routing between vLLM, SGLang, and llama.cpp on a laptop GPU.</p>
+    </article>
+    <article class="card spot rv">
+      <div class="card-top"><span class="chip accent">Next</span></div>
+      <h3>Applying for a Master's in AI</h3>
+      <p>If you supervise students on the questions below, I'd love to <a href="mailto:osamaaltaf.pk@gmail.com?subject=Master%27s%20in%20AI">hear from you</a>.</p>
+    </article>
   </div>
 </section>
 
-<!-- STORY -->
-<section id="story" class="pp-section">
-  <h2>How I got here</h2>
-  <div class="pp-prose">
-    <p>I did my BS in <strong>Physics</strong> at KFUEIT (2019 to 2023), where I fell for the computational side. Somewhere between lab reports I helped organize three international conferences and the region's first Science Mela, which taught me that I like making things happen as much as studying them.</p>
-    <p>My final-year project tried to detect cotton-leaf disease with a Vision Transformer and a homemade AI microscope. It worked on the test set and was confidently wrong on leaves it had never seen. That lesson about data and labels has followed me into everything since.</p>
-    <p>After graduating I joined a small software house as a junior AI engineer, then went remote: a voice-agent platform for a US client, a government system that translates speech across 30+ languages in under a second and a half, and LLM serving work for a team in London. Now I'm putting all of that into Wisko.</p>
+<!-- RESEARCH -->
+<section id="research" class="section wrap">
+  <header class="sec-head rv">
+    <p class="kicker"><span>02</span> Research</p>
+    <h2>Three questions I want to <em>spend years on</em></h2>
+    <p class="sec-sub">Building products showed me where my understanding runs out. Each of these started as a real failure in something I shipped.</p>
+  </header>
+
+  <div class="qs">
+    <!-- Q1 grounding -->
+    <article class="q spot rv">
+      <div class="q-art" aria-hidden="true">
+        <svg viewBox="0 0 320 200">
+          <defs>
+            <radialGradient id="xr" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#cfd8ff" stop-opacity=".55"/><stop offset="1" stop-color="#0b0f1d" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect x="16" y="16" width="150" height="168" rx="10" fill="#0b0f1d" stroke="rgba(255,255,255,.12)"/>
+          <ellipse cx="66" cy="96" rx="30" ry="52" fill="url(#xr)"/>
+          <ellipse cx="118" cy="96" rx="30" ry="52" fill="url(#xr)"/>
+          <path d="M91 40 V160" stroke="rgba(220,230,255,.35)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M40 70 Q91 58 142 70 M38 92 Q91 80 144 92 M40 114 Q91 102 142 114" stroke="rgba(220,230,255,.18)" fill="none" stroke-width="3"/>
+          <rect class="bbox" x="100" y="108" width="40" height="34" rx="3"/>
+          <path class="link" d="M140 125 C 175 125, 180 70, 196 70"/>
+          <g class="tokens">
+            <rect x="196" y="56" width="108" height="28" rx="8"/><text x="250" y="74">opacity, left</text>
+            <rect x="196" y="94" width="78" height="28" rx="8" class="dim"/><text x="235" y="112" class="dim">lower lobe</text>
+            <rect x="196" y="132" width="96" height="28" rx="8" class="dim"/><text x="244" y="150" class="dim">likely benign</text>
+          </g>
+          <circle class="scan" cx="0" cy="0" r="3"/>
+        </svg>
+      </div>
+      <div class="q-body">
+        <p class="q-n">01</p>
+        <h3>LLMs and VLMs that can show their work</h3>
+        <p>When I fine-tuned Llama 3.2 Vision on radiography, it wrote fluent, report-like text almost immediately. Proving that the text came from a specific region of the image was much harder. I want to understand <strong>grounding</strong>, not just fluency.</p>
+        <ul class="tags"><li>VLMs</li><li>Grounding</li><li>Medical imaging</li></ul>
+      </div>
+    </article>
+
+    <!-- Q2 agents -->
+    <article class="q spot rv">
+      <div class="q-art" aria-hidden="true">
+        <svg viewBox="0 0 320 200">
+          <g class="edges">
+            <path id="e1" d="M160 100 L80 46"/><path id="e2" d="M160 100 L240 46"/>
+            <path id="e3" d="M160 100 L60 140"/><path id="e4" d="M160 100 L260 140"/>
+            <path id="e5" d="M160 100 L160 178"/>
+            <path d="M80 46 L240 46" class="faint"/><path d="M60 140 L160 178 L260 140" class="faint"/>
+          </g>
+          <circle class="msg" r="3.5"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
+          <circle class="msg b" r="3.5"><animateMotion dur="2.9s" begin=".4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1"><mpath href="#e2"/></animateMotion></circle>
+          <circle class="msg c" r="3.5"><animateMotion dur="2.1s" begin=".8s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion></circle>
+          <circle class="msg" r="3.5"><animateMotion dur="3.2s" begin="1.1s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1"><mpath href="#e4"/></animateMotion></circle>
+          <circle class="msg b" r="3.5"><animateMotion dur="2.6s" begin=".2s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
+          <g class="hub"><circle cx="160" cy="100" r="26"/><text x="160" y="97">shared</text><text x="160" y="109">memory</text></g>
+          <g class="agent"><circle cx="80" cy="46" r="15"/><text x="80" y="50">A</text></g>
+          <g class="agent"><circle cx="240" cy="46" r="15"/><text x="240" y="50">B</text></g>
+          <g class="agent"><circle cx="60" cy="140" r="15"/><text x="60" y="144">C</text></g>
+          <g class="agent"><circle cx="260" cy="140" r="15"/><text x="260" y="144">D</text></g>
+          <g class="user"><circle cx="160" cy="180" r="11"/><text x="160" y="184">u</text></g>
+        </svg>
+      </div>
+      <div class="q-body">
+        <p class="q-n">02</p>
+        <h3>Many agents, many users</h3>
+        <p>Wisko runs a chain of agents for many users at once, and most failures live in the handoffs: shared state, memory, and who is allowed to see what. I want to study <strong>multi-agent systems</strong> and <strong>multi-user LLMs</strong> as a research problem, not only an engineering one.</p>
+        <ul class="tags"><li>Multi-agent</li><li>Memory</li><li>Multi-tenant LLMs</li></ul>
+      </div>
+    </article>
+
+    <!-- Q3 inference -->
+    <article class="q spot rv">
+      <div class="q-art" aria-hidden="true">
+        <svg viewBox="0 0 320 200">
+          <text class="lbl" x="20" y="34">decode</text>
+          <g class="toks">
+            <rect x="20" y="44" width="34" height="20" rx="5" style="--k:0"/><rect x="58" y="44" width="34" height="20" rx="5" style="--k:1"/>
+            <rect x="96" y="44" width="34" height="20" rx="5" style="--k:2"/><rect x="134" y="44" width="34" height="20" rx="5" style="--k:3"/>
+            <rect x="172" y="44" width="34" height="20" rx="5" style="--k:4"/><rect x="210" y="44" width="34" height="20" rx="5" style="--k:5"/>
+            <rect x="248" y="44" width="34" height="20" rx="5" style="--k:6"/>
+          </g>
+          <text class="lbl" x="20" y="96">KV cache</text>
+          <rect x="20" y="104" width="280" height="12" rx="6" class="track"/>
+          <rect x="20" y="104" width="280" height="12" rx="6" class="fill"/>
+          <text class="lbl" x="20" y="146">batch</text>
+          <g class="bars">
+            <rect x="20" y="154" width="22" height="30" rx="4" style="--k:0"/><rect x="48" y="154" width="22" height="30" rx="4" style="--k:1"/>
+            <rect x="76" y="154" width="22" height="30" rx="4" style="--k:2"/><rect x="104" y="154" width="22" height="30" rx="4" style="--k:3"/>
+            <rect x="132" y="154" width="22" height="30" rx="4" style="--k:4"/><rect x="160" y="154" width="22" height="30" rx="4" style="--k:5"/>
+            <rect x="188" y="154" width="22" height="30" rx="4" style="--k:6"/><rect x="216" y="154" width="22" height="30" rx="4" style="--k:7"/>
+            <rect x="244" y="154" width="22" height="30" rx="4" style="--k:8"/><rect x="272" y="154" width="22" height="30" rx="4" style="--k:9"/>
+          </g>
+        </svg>
+      </div>
+      <div class="q-body">
+        <p class="q-n">03</p>
+        <h3>Inference, and learning while serving</h3>
+        <p>Most of my working hours have gone into making models fast enough to use: KV caching, quantization, batching, sub-second voice pipelines. I want to go deeper into <strong>efficient inference</strong> and into how models reason and adapt at inference time.</p>
+        <ul class="tags"><li>KV cache</li><li>Quantization</li><li>Test-time compute</li></ul>
+      </div>
+    </article>
   </div>
 </section>
 
 <!-- WORK -->
-<section id="work" class="pp-section">
-  <h2>A few things I've made</h2>
-  <div class="pp-items">
-    <article class="pp-item">
-      <h3><a href="https://wiskoai.com" target="_blank" rel="noopener">Wisko</a></h3>
-      <p>The company. Give it a prompt, get back a whiteboard explainer video where a hand draws each idea as the narrator says it.</p>
-    </article>
-    <article class="pp-item">
-      <h3><a href="https://github.com/osamaaltaf-pk/Llama_3_2_Vision_Finetuning_Unsloth_Radiography" target="_blank" rel="noopener">A radiology assistant on Llama 3.2 Vision</a></h3>
-      <p>Classifier, vision-language model, and LLM chained into a report a patient can talk through. Where the fluency-versus-grounding problem became real for me.</p>
-    </article>
-    <article class="pp-item">
-      <h3><a href="https://github.com/osamaaltaf-pk/NeuralFolk" target="_blank" rel="noopener">NeuralFolk</a></h3>
-      <p>A self-hosted runtime that routes between local inference engines and gives agents vector plus graph memory, with no data leaving the machine.</p>
-    </article>
-    <article class="pp-item">
-      <h3><a href="https://github.com/osamaaltaf-pk/LLMs-Unsloth" target="_blank" rel="noopener">Teaching small models to reason</a></h3>
-      <p>My notebook of GRPO, LoRA, and Mixture-of-Experts experiments on Qwen3 and friends.</p>
-    </article>
-    <article class="pp-item">
-      <h3><a href="https://github.com/osamaaltaf-pk/crypts-of-doom" target="_blank" rel="noopener">Crypts of Doom</a></h3>
-      <p>Just for fun: a browser roguelite with no image or sound files at all. Every sprite is drawn in code and every sound is synthesized live.</p>
-    </article>
+<section id="work" class="section wrap">
+  <header class="sec-head rv">
+    <p class="kicker"><span>03</span> Work</p>
+    <h2>Things I've <em>made</em></h2>
+  </header>
+
+  <div class="works">
+    <a class="work spot rv wide" href="https://wiskoai.com" target="_blank" rel="noopener">
+      <div class="thumb t-wisko" aria-hidden="true">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet">
+          <rect x="0" y="0" width="400" height="220" fill="#f7f6f1"/>
+          <g class="wb">
+            <path class="ink" d="M110 150 C 110 110, 90 100, 90 75 a 40 40 0 1 1 80 0 c 0 25, -20 35, -20 75 Z"/>
+            <path class="ink" d="M115 162 H145 M118 174 H142"/>
+            <path class="ink" d="M130 20 V8 M78 40 L68 32 M182 40 L192 32"/>
+            <path class="ink" d="M230 70 H350 M230 100 H330 M230 130 H340"/>
+            <path class="ink arrow" d="M190 110 C 205 110, 210 110, 222 110 M214 102 L222 110 L214 118"/>
+          </g>
+          <g class="hand"><path d="M0 0 l26 -6 l10 18 l-20 14 z" fill="#e8c4a0" stroke="#3a2a1f" stroke-width="1.5"/><path d="M-2 0 l-14 6" stroke="#222" stroke-width="3" stroke-linecap="round"/></g>
+        </svg>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Founder project · Ongoing</p>
+        <h3>Wisko <span class="arrow-up">↗</span></h3>
+        <p>A prompt goes in. A whiteboard explainer video comes out, with a hand drawing each idea as the narrator says it. Agents for script, voice, images, and animation, running for many users at once.</p>
+      </div>
+    </a>
+
+    <a class="work spot rv" href="https://github.com/osamaaltaf-pk/Llama_3_2_Vision_Finetuning_Unsloth_Radiography" target="_blank" rel="noopener">
+      <div class="thumb t-xray" aria-hidden="true">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+          <defs><radialGradient id="lung" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#e6ecff" stop-opacity=".6"/><stop offset="1" stop-color="#05070e" stop-opacity="0"/></radialGradient></defs>
+          <rect width="400" height="220" fill="#05070e"/>
+          <ellipse cx="165" cy="112" rx="42" ry="74" fill="url(#lung)"/><ellipse cx="235" cy="112" rx="42" ry="74" fill="url(#lung)"/>
+          <path d="M200 30 V200" stroke="rgba(230,236,255,.35)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M130 70 Q200 54 270 70 M126 100 Q200 84 274 100 M128 130 Q200 114 272 130 M134 160 Q200 146 266 160" stroke="rgba(230,236,255,.14)" fill="none" stroke-width="4"/>
+          <rect class="bbox" x="222" y="128" width="54" height="44" rx="4"/>
+          <rect class="scanline" x="110" y="0" width="180" height="2"/>
+          <g class="report"><rect x="292" y="40" width="96" height="64" rx="8"/><path d="M302 58 H376 M302 72 H364 M302 86 H370"/></g>
+        </svg>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Multimodal · 2025</p>
+        <h3>Radiology assistant on Llama 3.2 Vision</h3>
+        <p>Classifier, vision-language model, and LLM chained into a report a patient can talk through. Where fluency versus grounding became real for me.</p>
+      </div>
+    </a>
+
+    <a class="work spot rv" href="https://github.com/osamaaltaf-pk/NeuralFolk" target="_blank" rel="noopener">
+      <div class="thumb t-router" aria-hidden="true">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="220" fill="#080b16"/>
+          <g class="wires"><path id="w1" d="M200 110 L80 50"/><path id="w2" d="M200 110 L320 50"/><path id="w3" d="M200 110 L80 170"/><path id="w4" d="M200 110 L320 170"/></g>
+          <circle class="pk" r="4"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
+          <circle class="pk" r="4"><animateMotion dur="2.2s" begin=".5s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
+          <circle class="pk" r="4"><animateMotion dur="2s" begin=".9s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion></circle>
+          <circle class="pk" r="4"><animateMotion dur="2.5s" begin="1.3s" repeatCount="indefinite"><mpath href="#w4"/></animateMotion></circle>
+          <g class="node core"><rect x="160" y="88" width="80" height="44" rx="10"/><text x="200" y="115">one API</text></g>
+          <g class="node"><rect x="34" y="34" width="92" height="32" rx="8"/><text x="80" y="55">Ollama</text></g>
+          <g class="node"><rect x="274" y="34" width="92" height="32" rx="8"/><text x="320" y="55">vLLM</text></g>
+          <g class="node"><rect x="34" y="154" width="92" height="32" rx="8"/><text x="80" y="175">SGLang</text></g>
+          <g class="node"><rect x="274" y="154" width="92" height="32" rx="8"/><text x="320" y="175">llama.cpp</text></g>
+        </svg>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Open source · Inference</p>
+        <h3>NeuralFolk</h3>
+        <p>A self-hosted AI runtime: one API in front of local inference engines, plus vector and graph memory for agents. Nothing leaves the machine.</p>
+      </div>
+    </a>
+
+    <a class="work spot rv" href="https://github.com/osamaaltaf-pk/LLMs-Unsloth" target="_blank" rel="noopener">
+      <div class="thumb t-curve" aria-hidden="true">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="220" fill="#090812"/>
+          <g class="grid"><path d="M40 40 H370 M40 85 H370 M40 130 H370 M40 175 H370"/></g>
+          <path class="axis" d="M40 190 H372 M40 190 V28"/>
+          <path class="curve" d="M40 182 C 70 180, 90 172, 110 170 S 140 150, 160 152 S 190 120, 210 118 S 240 96, 260 90 S 300 66, 320 58 S 350 50, 368 46"/>
+          <path class="area" d="M40 182 C 70 180, 90 172, 110 170 S 140 150, 160 152 S 190 120, 210 118 S 240 96, 260 90 S 300 66, 320 58 S 350 50, 368 46 V190 H40 Z"/>
+          <text class="lbl" x="48" y="24">reward</text><text class="lbl" x="330" y="208">steps</text>
+        </svg>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Fine-tuning · Reasoning</p>
+        <h3>Teaching small models to reason</h3>
+        <p>GRPO reasoning training without a critic model, LoRA and QLoRA, and Mixture-of-Experts experiments on Qwen3.</p>
+      </div>
+    </a>
+
+    <a class="work spot rv" href="https://github.com/osamaaltaf-pk/onnx-sfx-music-stable-audio" target="_blank" rel="noopener">
+      <div class="thumb t-audio" aria-hidden="true">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="220" fill="#07100f"/>
+          <g class="stages">
+            <rect x="20" y="30" width="80" height="34" rx="8"/><text x="60" y="52">Text enc</text>
+            <rect x="112" y="30" width="80" height="34" rx="8"/><text x="152" y="52">Cond</text>
+            <rect x="204" y="30" width="80" height="34" rx="8" class="hot"/><text x="244" y="52">DiT</text>
+            <rect x="296" y="30" width="84" height="34" rx="8"/><text x="338" y="52">Decoder</text>
+          </g>
+          <g class="wave">
+            <rect x="30" y="110" height="80" width="8" rx="4" style="--k:0"/><rect x="46" y="110" width="8" height="80" rx="4" style="--k:1"/><rect x="62" y="110" width="8" height="80" rx="4" style="--k:2"/><rect x="78" y="110" width="8" height="80" rx="4" style="--k:3"/><rect x="94" y="110" width="8" height="80" rx="4" style="--k:4"/><rect x="110" y="110" width="8" height="80" rx="4" style="--k:5"/><rect x="126" y="110" width="8" height="80" rx="4" style="--k:6"/><rect x="142" y="110" width="8" height="80" rx="4" style="--k:7"/><rect x="158" y="110" width="8" height="80" rx="4" style="--k:8"/><rect x="174" y="110" width="8" height="80" rx="4" style="--k:9"/><rect x="190" y="110" width="8" height="80" rx="4" style="--k:10"/><rect x="206" y="110" width="8" height="80" rx="4" style="--k:11"/><rect x="222" y="110" width="8" height="80" rx="4" style="--k:12"/><rect x="238" y="110" width="8" height="80" rx="4" style="--k:13"/><rect x="254" y="110" width="8" height="80" rx="4" style="--k:14"/><rect x="270" y="110" width="8" height="80" rx="4" style="--k:15"/><rect x="286" y="110" width="8" height="80" rx="4" style="--k:16"/><rect x="302" y="110" width="8" height="80" rx="4" style="--k:17"/><rect x="318" y="110" width="8" height="80" rx="4" style="--k:18"/><rect x="334" y="110" width="8" height="80" rx="4" style="--k:19"/><rect x="350" y="110" width="8" height="80" rx="4" style="--k:20"/><rect x="366" y="110" width="8" height="80" rx="4" style="--k:21"/>
+          </g>
+        </svg>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Open source · Diffusion</p>
+        <h3>Stable Audio 3 Small in ONNX</h3>
+        <p>Splits Stability AI's music and sound-effects diffusion model into four ONNX modules so it runs on CPU or GPU without PyTorch.</p>
+      </div>
+    </a>
+
+    <a class="work spot rv" href="https://github.com/osamaaltaf-pk/cotton-disease-detection" target="_blank" rel="noopener">
+      <div class="thumb t-leaf">
+        <img src="/assets/personal-cotton.jpg" alt="Cotton leaf from the thesis dataset" width="640" height="656" loading="lazy" />
+        <span class="det" aria-hidden="true"><em>curl virus</em></span>
+        <span class="sweep" aria-hidden="true"></span>
+      </div>
+      <div class="work-body">
+        <p class="work-meta">Undergraduate thesis · 2023</p>
+        <h3>Cotton-leaf disease detection</h3>
+        <p>Accurate on the test set, confidently wrong on leaves it had never seen. That lesson about data and labels shaped everything after.</p>
+      </div>
+    </a>
+    <a class="work spot rv wide more-card" href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">
+      <div class="more-inner">
+        <p class="work-meta">And the rest</p>
+        <h3>40+ more codebases <span class="arrow-up">↗</span></h3>
+        <p>Voice agents, TTS workstations, a 2D lip-sync studio, DINOv2 person re-identification, an ESP32 on-device detector, and a browser game drawn entirely in code.</p>
+      </div>
+      <div class="more-grid" aria-hidden="true">
+        <span>Pocket TTS</span><span>Aura TTS</span><span>Omni Lip Sync</span><span>DINOv2 Re-ID</span><span>ESP32 FOMO</span><span>Gemma EduGen</span><span>Orpheus</span><span>Crypts of Doom</span>
+      </div>
+    </a>
   </div>
-  <p class="pp-more">The full list lives on <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a>, and the formal version is on my <a href="/professors/">research page</a>.</p>
+  <p class="more rv">More on <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a>. The formal versions of my profile: <a href="/professors/">for professors</a> · <a href="/companies/">for companies</a>.</p>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="section wrap">
+  <header class="sec-head rv">
+    <p class="kicker"><span>04</span> Journey</p>
+    <h2>From physics to <em>agents</em></h2>
+  </header>
+  <ol class="timeline" id="timeline">
+    <span class="tl-line" aria-hidden="true"><span id="tlFill"></span></span>
+    <li class="rv"><time>2019</time><div><h3>BS Physics, KFUEIT</h3><p>Computational physics and programming. I fell for the computational side.</p></div></li>
+    <li class="rv"><time>2021</time><div><h3>Organizing science</h3><p>Helped run ICPSE-2021, ICPSE-2022, ICSMAND, and the 1st South Punjab Science Mela.</p></div></li>
+    <li class="rv"><time>2023</time><div><h3>Thesis and graduation</h3><p>A Vision Transformer and an AI microscope for cotton-leaf disease. Graduated with a 3.63 CGPA.</p></div></li>
+    <li class="rv"><time>2023</time><div><h3>Junior AI Engineer, iAxon</h3><p>First production ML: training pipelines, forecasting, feature engineering.</p></div></li>
+    <li class="rv"><time>2024</time><div><h3>Voice AI platform, Miami (remote)</h3><p>SIP telephony and LangGraph agents holding real phone conversations.</p></div></li>
+    <li class="rv"><time>2025</time><div><h3>Real-time translation, GovTech (remote)</h3><p>Speech in, speech out, across 30+ languages in under a second and a half.</p></div></li>
+    <li class="rv"><time>2025</time><div><h3>LLM systems, London (remote)</h3><p>Serving and fine-tuning LLMs with vLLM, caching, and multi-agent orchestration.</p></div></li>
+    <li class="rv"><time>2026</time><div><h3>Founder, Wisko</h3><p>Putting all of it into one product, and learning where my understanding runs out.</p></div></li>
+    <li class="rv next"><time>Next</time><div><h3>Master's in AI</h3><p>Going deep on LLMs and VLMs, multi-agent and multi-user systems, and inference.</p></div></li>
+  </ol>
 </section>
 
 <!-- NEWS -->
-<section id="news" class="pp-section">
-  <h2>News</h2>
-  <ul class="pp-news">
-    <li><time>Oct 2026</time><span>Applying for Master's programs in AI.</span></li>
-    <li><time>Sep 2026</time><span>Released the <a href="https://github.com/osamaaltaf-pk/Wisko-AI-SDK" target="_blank" rel="noopener">Wisko API and Python SDK</a>. Also finally put years of old university and side projects on GitHub.</span></li>
-    <li><time>Jun 2026</time><span>Open-sourced an <a href="https://github.com/osamaaltaf-pk/onnx-sfx-music-stable-audio" target="_blank" rel="noopener">ONNX export of Stable Audio 3 Small</a>, so it runs without PyTorch.</span></li>
-    <li><time>Apr 2026</time><span>Built a pipeline that turns national-curriculum textbooks into interactive lessons, and fine-tuned Gemma on it.</span></li>
-    <li><time>Jan 2026</time><span>Finished my LLM systems contract with a team in London.</span></li>
-    <li><time>Feb 2025</time><span>Started on a government real-time voice translation system covering 30+ languages.</span></li>
-    <li><time>2023</time><span>Graduated with a BS in Physics from KFUEIT, CGPA 3.63/4.00.</span></li>
-    <li><time>2021</time><span>Co-organized ICPSE-2021 and the 1st South Punjab Science Mela.</span></li>
+<section id="news" class="section wrap">
+  <header class="sec-head rv">
+    <p class="kicker"><span>05</span> News</p>
+    <h2>Recent <em>updates</em></h2>
+  </header>
+  <ul class="news">
+    <li class="rv"><time>Oct 2026</time><span>Applying for Master's programs in AI.</span></li>
+    <li class="rv"><time>Sep 2026</time><span>Released the <a href="https://github.com/osamaaltaf-pk/Wisko-AI-SDK" target="_blank" rel="noopener">Wisko API and Python SDK</a>.</span></li>
+    <li class="rv"><time>Jun 2026</time><span>Open-sourced an <a href="https://github.com/osamaaltaf-pk/onnx-sfx-music-stable-audio" target="_blank" rel="noopener">ONNX export of Stable Audio 3 Small</a>.</span></li>
+    <li class="rv"><time>Apr 2026</time><span>Turned curriculum textbooks into interactive lessons and fine-tuned Gemma on them.</span></li>
+    <li class="rv"><time>Jan 2026</time><span>Finished an LLM systems contract with a team in London.</span></li>
+    <li class="rv"><time>Feb 2025</time><span>Started on a government real-time voice translation system.</span></li>
   </ul>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="pp-section">
-  <h2>Say hello</h2>
-  <p>I'm happy to talk about research, Master's programs, Wisko, or whatever you're building. Email is the best way to reach me: <a href="mailto:osamaaltaf.pk@gmail.com">osamaaltaf.pk@gmail.com</a>.</p>
+<section id="contact" class="contact">
+  <div class="wrap contact-inner rv">
+    <p class="kicker center"><span>06</span> Contact</p>
+    <h2>Let's <em>talk.</em></h2>
+    <p>About research, Master's programs, Wisko, or whatever you're building. If you supervise students working on LLMs, VLMs, agents, or inference, I'd especially like to hear from you.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary btn-lg magnetic" href="mailto:osamaaltaf.pk@gmail.com"><span>Email me</span></a>
+      <button class="btn btn-ghost btn-lg magnetic" type="button" id="copyEmail" data-email="osamaaltaf.pk@gmail.com"><span>Copy address</span></button>
+    </div>
+  </div>
 </section>
 
 </main>
 
-<footer class="footer">
-  <div class="pp-wrap footer-inner">
-    <span>© <span id="year"></span> Osama Altaf</span>
-    <span class="footer-links">
-      <a href="mailto:osamaaltaf.pk@gmail.com">osamaaltaf.pk@gmail.com</a>
-      <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/osamaaltafpk/" target="_blank" rel="noopener">LinkedIn</a>
-    </span>
-  </div>
+<footer class="foot wrap">
+  <span>© <span id="year">2026</span> Osama Altaf</span>
+  <span class="foot-links">
+    <a href="https://github.com/osamaaltaf-pk" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://huggingface.co/deepLEARNING786" target="_blank" rel="noopener">Hugging Face</a>
+    <a href="https://www.linkedin.com/in/osamaaltafpk/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="/Osama_Altaf_Academic_CV.pdf">CV</a>
+  </span>
 </footer>
 
-<script src="/script.js"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/personal/personal.js" defer></script>
 </body>
 </html>
