@@ -1,6 +1,6 @@
 # Osama Altaf, Personal Profile Site
 
-A fast, dependency-free static site (HTML + CSS + vanilla JS) with **two tailored versions**
+A fast, dependency-free static site (HTML + CSS + vanilla JS) with **three versions**
 of my profile plus a private share hub. Deploys to Vercel with zero configuration.
 
 ## Pages
@@ -10,6 +10,7 @@ of my profile plus a private share hub. Deploys to Vercel with zero configuratio
 | `/`            | **Private hub** (me)         | Pick a version, copy its link, share only that page |
 | `/companies`   | Companies & recruiters       | Industry-first: impact, experience, skills, projects |
 | `/professors`  | University professors        | Research-first: education & CGPA, thesis, projects  |
+| `/personal`    | Anyone (bio / signature link) | First-person homepage: Now, what I want to study next, my story, News |
 
 Each audience gets **its own PDF** - the two are not the same document:
 
@@ -27,6 +28,7 @@ for its own audience.
 index.html            # private share hub (noindex)
 companies/index.html  # company/recruiter version
 professors/index.html # professor / grad-school version
+personal/index.html   # personal academic-style homepage (Now + News)
 styles.css            # shared styles (light + dark)
 script.js             # theme toggle, mobile nav, scrollspy, copy buttons
 assets/               # photo + favicons
